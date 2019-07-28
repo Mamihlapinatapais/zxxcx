@@ -1,0 +1,33 @@
+<view class="main">
+    <view class="superbox">
+
+        <view class="box1">
+
+        </view>
+        <view class="test">
+            测试题
+        </view>
+        <view class="section_section_gap">
+          <view class="section__title">radio</view>
+          <radio-group name="radio-group">
+            <label><radio value="radio1"/>radio1</label>
+            <label><radio value="radio2"/>radio2</label>
+          </radio-group>
+        </view>
+        <view class="section_section_gap">
+          <view class="section__title">radio</view>
+          <radio-group name="radio-group">
+            <label><radio value="radio1"/>radio1</label>
+            <label><radio value="radio2"/>radio2</label>
+          </radio-group>
+        </view>
+        <view class="section_section_gap">
+          <view class="section__title">radio</view>
+          <radio-group name="radio-group">
+            <label><radio value="radio1"/>radio1</label>
+            <label><radio value="radio2"/>radio2</label>
+          </radio-group>
+        </view>
+    </view>
+    <button class="button" bindtap='inquire' wx:if="{{status === 1}}">查询</button>
+</view>

@@ -1,0 +1,69 @@
+<form bindsubmit="formSubmit">
+  <!-- 顶部 -->
+  <view class='Box'>
+    <view class='avatarBox' hover-class='hover'>
+      <view class='l-avatar'>头像</view>
+      <view class='r-avatar'>
+        <view class='detail'>真实头像有利于面试</view>
+        <view class='bug'>
+          <image class='avatar' src='{{avatar}}'></image>
+        </view>
+        <view>
+          <image class="more" src="{{more}}"></image>
+        </view>
+      </view>
+    </view>
+    <infoNature perInfo='微信昵称' detail="{{detail.user_vxName}}" more="false"></infoNature>
+    <picker bindchange="bindPickerChange" range="{{array}}" name='user_sex' value="{{array[index1]}}">
+      <infoNature perInfo='性别' detail="{{detail.user_sex}}"></infoNature>
+    </picker>
+  </view>
+  <!-- 中间 -->
+  <view class='Box'>
+    <inputModal key="姓名" value="真实名字" must="{{true}}" orig="姓名">
+      <view slot='star' class='section211'>*</view>
+      <input slot='inputPlace' placeholder="真实名字" bindinput="getValue" value='真实名字' name="user_dorm" />
+    </inputModal>
+    <picker mode="date" start="1995-09-01" end="2019-09-01" bindchange="bindDateChange" value="{{detail.user_birthday}}" name='user_birthday'>
+      <infoNature perInfo='生日' detail="{{detail.user_birthday}}">
+        <view class='section211'>*</view>
+      </infoNature>
+    </picker>
+    <inputModal key="手机号" value="12345677789" must="{{true}}" orig="手机号">
+      <view slot="star" class='section211'>*</view>
+      <input slot='inputPlace' placeholder="手机号" bindinput="getValue" value='12345677789' name="user_phoneNumber" />
+    </inputModal>
+    <inputModal key="QQ号" value="1044585428" must="{{true}}">
+      <view class='section211'>*</view>
+      <input slot='inputPlace' type='text' placeholder="{{orig}}" bindinput="getValue" value='1044585428' name="user_qqNumber" />
+    </inputModal>
+    <inputModal key="邮箱" value="1044585428@qq.com" must="{{true}}" orig="邮箱">
+      <input slot='inputPlace' type='text' placeholder="{{orig}}" bindinput="getValue" value='1044585428@qq.com' name="user_email"/>
+    </inputModal>
+  </view>
+  <!-- 底部 -->
+  <view class='Box'>
+    <picker bindchange="bindAcPickerChange" range="{{acArray}}" name='user_college' value="{{acArray[index2]}}">
+      <infoNature perInfo='学院' detail="{{detail.user_college}}">
+        <view class='section211'>*</view>
+      </infoNature>
+    </picker>
+    <picker bindchange="bindclassPickerChange" range="{{user_Proclass}}" name='Proclass' value="{{user_Proclass[index3]}}">
+      <infoNature perInfo='专业班级' detail="{{detail.user_Proclass}}">
+        <view class='section211'>*</view>
+      </infoNature>
+    </picker>
+    <inputModal key="宿舍楼号" value="x号楼505" must="{{true}}" orig="宿舍楼号">
+      <view slot='star' class='section211'>*</view>
+      <input slot='inputPlace' placeholder="宿舍楼号" bindinput="getValue" value='这是宿舍楼号加宿舍号' name="user_dorm" />
+    </inputModal>
+    <inputModal key="学号" value="2018006496" must="{{true}}" orig="学号">
+      <view slot='star' class='section211'>*</view>
+      <input slot='inputPlace' placeholder="学号" bindinput="getValue" value='这是学号' name="user_studentId" />
+    </inputModal>
+  </view>
+  <!-- 保存按钮 -->
+  <view class='saveBox'>
+    <button class='medium' hover-class='hover' form-type="submit">保存</button>
+  </view>
+</form>

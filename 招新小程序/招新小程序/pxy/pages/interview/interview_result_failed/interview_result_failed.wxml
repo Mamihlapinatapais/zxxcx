@@ -1,0 +1,8 @@
+<view class="superbox1">
+    <view class="box1">
+        <image src="../../../images/failed.png" />
+    </view>
+    <view class="box2">
+        面试失败
+    </view>
+</view>

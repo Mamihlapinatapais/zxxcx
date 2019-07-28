@@ -1,0 +1,37 @@
+<!--pages/result/result.wxml-->
+
+<view class='box'>
+    <view class='box_1'>
+      <image class='top' src='/images/top.png'> </image>
+      <image class='top_1' src='/images/top_1.png'></image>
+      <view class='box_2'>
+           <image class='log' src='/images/log.png'></image>
+           <image class='word' src='/images/word.png'></image>
+      </view>
+    </view>
+    <view class='box_3'>
+          <image class='text' src='/images/text.png'></image>
+    </view>
+    <view class='box_4'>
+           <view class='success_1'>
+                    <text class='success'>★ ★ ★ ★   录用通知书    ★ ★ ★ ★ </text>
+           </view>
+           <image class='row' src='/images/row.png'></image>
+    </view>
+    <view class='box_5'>
+           <text space='emsp' class='name'>{{name}}同学:</text>
+           <text space='emsp' class='encourge'>
+                  \n  恭喜通过云顶书院面试初论考核,成为云顶书院2019届新学员之一! \n  希望接下来的四年大学时光，云顶书院成为你杨帆起航的码头
+           </text>
+           <view class='box_end'>
+                  <image  class='avator' src='../../../images/avator.png'></image>
+                  <text class='lastWord'>恭喜\n{{name}}同学\n通过云顶书院面试</text>
+                  <image src='../../../images/SmallProjectCard.png' class='SmallProgramCode'></image>
+           </view>
+    </view>
+    <view class='box_6'>
+           <image class='endWord' src='/images/endWord.png'></image>
+    </view>
+
+
+</view>

@@ -1,0 +1,118 @@
+/* pages/mine/mine.wxss */
+
+
+page{
+  background-color: #F6F6F6;
+}
+
+/*头像  更多*/
+.topBox{
+  display:flex;
+  background-color: #FFFFFF;
+  justify-content:space-between;
+  width: 750rpx;
+  height: 244rpx;
+}
+.avatar{
+  width: 124rpx;
+  height: 124rpx;
+  margin-left: 30rpx;
+  margin-top: 69rpx;
+}
+.more{
+  margin-top: 110rpx;
+  margin-right: 30rpx;
+  width: 10rpx;
+  height: 18rpx;
+}
+
+.sexLogo{
+  /*margin-top: 22rpx;*/
+  margin-left: 10rpx;
+  width: 20rpx;
+  height: 25rpx;
+}
+
+.nameBox{
+  background-color: #FFFFFF;
+  display: block;
+  margin-top:70rpx;
+  margin-right: 100rpx;
+  width:400rpx;
+  height: 120rpx;
+}
+
+.name{
+  color:#222222;
+  /*margin-left: 189rpx;*/
+  /*margin-top: 22rpx;*/
+  font-size:40rpx;
+}
+
+.wxNum{
+  margin-top:30rpx;
+  color: #888888;
+  font-size:24rpx
+}
+
+
+/*我的消息*/
+.myNewsBox{
+  background-color: #FFFFFF;
+  margin-top:38rpx;
+  font-size: 30rpx;
+  height:110rpx;
+  overflow:hidden;
+}
+.myNews{
+  float: left;
+  margin-left:30rpx;
+  font-size: 30rpx;
+  margin-top: 37rpx;
+}
+.myNews_icon{
+  float: left;
+}
+.myNewsIcon{
+  margin-left:30rpx;
+  margin-top:40rpx;
+  width: 40rpx;
+  height: 35rpx;
+}
+
+
+/*关于我们*/
+.aboutBox{
+  background-color: #FFFFFF;
+  margin-top:38rpx;
+  font-size: 30rpx;
+  height:110rpx;
+  overflow:hidden;
+}
+.about{
+  float: left;
+  margin-left:30rpx;
+  font-size: 30rpx;
+  margin-top: 37rpx;
+}
+.about_icon{
+  float: left;
+}
+.aboutIcon{
+  margin-left:30rpx;
+  margin-top:40rpx;
+  width: 40rpx;
+  height: 35rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+

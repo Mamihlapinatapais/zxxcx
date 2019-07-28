@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "select": "../../../components/select/select",
+    "ticket_info" : "../../../components/ticket_info/ticket_info",
+    "ticket_info1" : "../../../components/ticket_info1/ticket_info1"
+  },
+  "navigationBarTitleText": "抢票系统"
+}

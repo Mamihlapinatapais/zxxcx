@@ -1,0 +1,18 @@
+<!--pages/newscenter/newscenter.wxml-->
+<navigator  class="newscenter"  url="/pages/index/index-newsdetails/index-newsdetails?nst={{item.id}}" wx:for="{{newslist}}"  wx:key="id">
+
+<view class="include12">
+
+<view  class="newstext1">
+{{item.title}}
+</view>
+<view  class="newstext2">
+{{item.time}}
+by {{item.author}}
+</view>
+
+</view>
+
+<image class="newstext3" src="  {{item.images}}" ></image>
+
+</navigator>

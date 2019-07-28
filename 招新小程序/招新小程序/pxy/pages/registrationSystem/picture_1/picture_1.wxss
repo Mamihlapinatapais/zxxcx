@@ -1,0 +1,73 @@
+/* pages/picture_1/picture_1.wxss */
+/*选择图片View*/
+.box{
+  width:  750rpx;
+  height:  1334rpx;
+  background-color:  #f6f6f6;
+}
+
+.empty{
+  width:  750rpx;
+  height:  30rpx;
+}
+
+.addImv{
+    margin: 20rpx 20rpx;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/*添加图片*/
+.addImv .chooseView{
+    width: 230rpx;
+    height: 230rpx;
+    background-color:#e5e5e5;
+   
+    text-align: center;
+    line-height: 230rpx;
+    padding: 0rpx 7rpx;
+}
+.addImv .chooseImv{
+    width: 50rpx;
+    height: 50rpx;
+}
+/*已选择的图片*/
+.addImv .upFile{
+    width: 160rpx;
+    height:160rpx;
+    position: relative;
+    padding: 0rpx 7rpx;
+}
+.addImv .upFile .itemImv{
+    width: 160rpx;
+    height: 160rpx;
+    padding: 0rpx 7rpx;
+}
+.addImv .upFile .closeImv{
+    position: absolute;
+    right: 0rpx;
+    top: 0rpx;
+    width: 50rpx;
+    height:50rpx;
+}
+
+.empty_1{
+  width:  750rpx;
+  height: 832rpx;
+}
+
+.button_1::after{
+  border:  none;
+}
+
+.button_1{
+  width:  710rpx;
+  height:  84rpx;
+  border-radius:  40rpx;
+ background: linear-gradient(to right, #49ADD6, #7A94ED);
+  line-height:  84rpx;
+  color:  #FFFFFF;
+  font-size:  30rpx;
+  font-family:  PingFang SC;
+
+}

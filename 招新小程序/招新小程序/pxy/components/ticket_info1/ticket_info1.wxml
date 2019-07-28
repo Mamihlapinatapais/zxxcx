@@ -1,0 +1,26 @@
+<!--components/ticket_info/ticket_info.wxml-->
+<picker bindchange="bindcollegerChange" value="{{Index}}" range="{{List}}">
+    <view class="ticket_info" hover-class="click_change" hover-start-time="50" hover-stay-time="70">
+        <view class="superbox1">
+            <view class="icon">
+                <image src="../../images/1.png" />
+            </view>
+            <view class="boxone">
+                {{textone}}
+            </view>
+        </view>
+
+        <view class="superbox2">
+            <view class="boxtwo">
+                {{List[Index]}}
+            </view>
+            <view class="more">
+                <image src="../../images/more.png" />
+            </view>
+        </view>
+    </view>
+</picker>
+
+
+
+

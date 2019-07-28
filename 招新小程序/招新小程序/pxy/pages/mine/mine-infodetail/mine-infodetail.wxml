@@ -1,0 +1,17 @@
+<!--pages/infodetail/infodetail.wxml-->
+
+ <view class="infodetails" wx:for="{{detailinfo}}" >
+
+<view  class="infotail1">
+{{item.title}}
+</view>
+<view  class="infotail2">
+{{item.time}}
+</view>
+
+<image class="infotail3" src="  {{item.images}}" ></image>
+<view  class="infotail4">
+{{item.content}}
+</view>
+
+</view>

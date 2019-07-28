@@ -1,0 +1,15 @@
+<!--pages/mineinfo/mineinfo.wxml-->
+<navigator  class="mineinfo"  url="/pages/mine/mine-infodetail/mine-infodetail" wx:for="{{infolist}}"  wx:key="id">
+
+<view class="include12">
+
+<view  class="infotext1">
+{{item.title}}
+</view>
+<view  class="infotext2">
+{{item.time}}
+</view>
+
+</view>
+
+</navigator>

@@ -1,0 +1,104 @@
+<!--miniprogram/pages/sign_up/sign_up.wxml-->
+<form bindsubmit='formSubmit'>
+<view class='div_f'>
+      <view class='div_1'>
+         <view class='div_2'></view>
+         <text class='text_1'>振翅云顶之上，极目星辰大海</text>
+         <view class='div_3'></view>
+         <text class='text_2'>云顶书院报名截止日期为2019.09.30</text>
+      </view>
+      <view class='div_4'>
+           <text class='text_3'>报名方向</text>
+           <view class='direction'>
+           <picker class='chooseDirection'  bindchange='pickerChangeDirection' value='{{direction}}' range='{{directionArr}}'>
+                  <view class="picker">
+                     {{directionArr[direction]}}
+                  </view>
+           </picker>
+           </view>
+     </view>
+</view>
+<view class='div_s'>
+      <view class='div_6'>
+      <!--选择头像 -->
+         <view class='head'>
+            <text class='head_1'>头像</text>
+            <image class='header'  src="{{src}}"  mode="aspecFill" bindtap="chooseImg" style='border-radius:10rpx'  ></image>  
+         </view>  
+        <!--选择性别 -->
+         <view class='sex'>
+            <text class='sex_1'>性别</text>
+            <input  class='input' placeholder='请输入'  focus='ture' placeholder-style='color:#F6F6F6;' name='sex'></input>
+        </view>
+    </view>
+      <view class='div_7'>
+     <!--姓名 -->
+         <view class='name'>
+             <image class='star' src='/images/01.png'></image>
+             <text class="name_1"> 姓名</text>
+             <input  class='input' placeholder='请输入'  focus='ture' placeholder-style='color:#F6F6F6;' name='name'></input>
+       </view>
+       <!--生日 -->
+       <view class='birthday'>
+            <image class='star' src='/images/01.png'></image>
+            <text class='birthday_1'>生日</text> 
+            <picker mode="date" value="{{date}}" start="1995-01-01" end="2005-01-01" bindchange="bindDateChange">
+                 <view class="picker">
+                 {{date}}
+                 </view>
+            </picker>
+      </view>
+      <!--电话 -->
+      <view class='number'>
+            <image class='star' src='/images/01.png'></image>
+            <text class='number_1'>电话</text>
+            <input  class='input' placeholder='请输入'  focus='ture' placeholder-style='color:#F6F6F6;' name='number'></input>
+      </view>
+      <!--QQ -->
+     <view class='qq'>
+            <image class='star' src='/images/01.png'></image>
+            <text class='qq_1'>QQ</text>
+            <input  class='input' placeholder='请输入'  focus='ture' placeholder-style='color:#F6F6F6;' name='qq'></input>
+     </view>
+     <!--邮箱 -->
+     <view class='mail'>
+           <text class='mail_1'>邮箱</text>
+           <input  class='input' placeholder='请输入'  focus='ture' placeholder-style='color:#F6F6F6;' name='mail'></input>
+    </view>
+  </view>
+
+  <view class='div_8'>
+  <!--学院-->
+    <view class='academic'>
+           <image class='star' src='/images/01.png'></image>
+           <text class='academic_1'>学院</text>
+           <picker bindchange='bindPickerChange' value='{{index}}' range='{{array}}'>
+                  <view class="picker">
+                     {{array[index]}}
+                  </view>
+          </picker>
+    </view>
+    <!--班级 -->
+    <view class='class'>
+          <image class='star' src='/images/01.png'></image>
+          <text class='class_1'>班级</text>
+          <input  class='input' placeholder='请输入'  focus='ture' placeholder-style='color:#F6F6F6;' name='class'></input>
+    </view>
+    <!--宿舍楼 -->
+    <view class='floor'>
+           <image class='star' src='/images/01.png'></image>
+           <text class='floor_1'>宿舍楼</text>
+           <input  class='input' placeholder='请输入'  focus='ture' placeholder-style='color:#F6F6F6;' name='floor'></input>
+    </view>
+    <!--学号 -->
+    <view class='idcard'>
+            <image class='star' src='/images/01.png'></image>
+            <text class='idcard_1'>学号</text>
+            <input  class='input' placeholder='请输入'  focus='ture' placeholder-style='color:#F6F6F6;' ></input>
+  </view>
+  </view>
+</view>
+<view class='div_t'>
+       <button class='button' hover-class='buttonHover' bindtap='goToApply' form-type='submit'>报名</button>
+</view>
+</form>

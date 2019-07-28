@@ -1,0 +1,20 @@
+<view class="main">
+    <view class="box1">
+
+    </view>
+
+    <view class="box2">
+        <view class="smallbox">
+            <image src="../../../images/waiting.png" />
+        </view>
+        <view class="littlebox">
+            面试结果审核中
+        </view>
+    </view>
+
+    <view class="box3">
+        <view class="smallbox3">
+            预计{{time}}公布
+        </view>
+    </view>
+</view>

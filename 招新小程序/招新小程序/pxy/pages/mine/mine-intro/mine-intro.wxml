@@ -1,0 +1,10 @@
+<!--pages/intro/intro.wxml-->
+
+<view class="intro"  wx:for="{{introlist}}">
+<text  class="introtext1">
+{{item.title}}
+</text>
+<view  class="introtext2">
+{{item.content}}
+</view>
+</view>

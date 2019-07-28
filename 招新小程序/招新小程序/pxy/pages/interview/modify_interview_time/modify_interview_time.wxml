@@ -1,0 +1,48 @@
+<view class="main">
+    <!-- superbox -->
+    <view class="superbox">
+        <!-- header -->
+        <view class="header">
+            <!-- 空 -->
+            <view class="box1">
+
+            </view>
+            <!-- title -->
+            <view class="title">
+                {{aData}}
+            </view>
+            <!-- 空 -->
+            <view class="box2">
+
+            </view>
+            <!-- 面试时间 -->
+            <view class="time">
+                {{bData}}
+            </view>
+        </view>
+        <!-- trunk -->
+        <view class="trunk">
+            <!-- bigbox -->
+            <view class="bigbox">
+                <!-- 选择面试时间 -->
+                <view class="selecttime">
+                    {{cData}}
+                </view>
+                <!-- 选择框1 -->
+                <view class="selectbox1">
+                    <select multiArray = "{{List1}}" multiIndex = "{{Index1}}"></select>
+                </view>
+                <!-- 选择框2 -->
+                <view class="selectbox2">
+                    <select multiArray = "{{List2}}" multiIndex = "{{Index2}}"></select>
+                </view>
+            </view>
+        </view>
+        <!-- 提示 -->
+        <view class="txt">
+            {{dData}}
+        </view>        
+    </view>
+    <!-- 重新提交 -->
+    <button class="button" hover-class="button-hover">重新提交</button>
+</view>

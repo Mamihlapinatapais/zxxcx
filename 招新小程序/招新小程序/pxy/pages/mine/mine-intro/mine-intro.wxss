@@ -1,0 +1,28 @@
+/* pages/intro/intro.wxss */
+page{
+  background-color: #F6F6F6;
+}
+
+.intro{
+  background-color: white;
+  width:710rpx;
+  height:700rpx;
+  border-radius: 10rpx;
+  margin-left:14rpx;
+  margin-top:15rpx;
+  padding-left:15rpx;
+  padding-right:5rpx;
+}
+
+.introtext1{
+  font-family: PingFang SC;
+  font-size:30rpx;
+  color:#4783B5;
+}
+.introtext2{
+  font-family: PingFang SC;
+  font-size:22rpx;
+  line-height:45rpx;
+  margin-top:15rpx;
+  color:#666666;
+}

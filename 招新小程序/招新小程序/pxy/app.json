@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine-mineinfo/mine-mineinfo",
+    "pages/mine/mine-infodetail/mine-infodetail",
+    "pages/mine/mine-myinfoo/mine-myinfoo",
+    "pages/mine/mine-mine/mine-mine",
+    "pages/index/index-newsdetails/index-newsdetails",
+    "pages/index/index-newscenter/index-newscenter",
+    "pages/mine/mine-intro/mine-intro",
+
+
+
+    "pages/rush/rush_index/rush_index",
+    "pages/rush/rush_details/rush_details",
+    "pages/rush/rush_ticket/rush_ticket",
+
+
+
+    "pages/registrationSystem/again/again",
+    "pages/registrationSystem/apply/apply",
+    "pages/registrationSystem/map/map",
+    "pages/registrationSystem/picture_1/picture_1"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#CCCCCC",
+    "selectedColor": "#4783B5",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "/images/index-active.png",
+        "iconPath": "/images/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "/images/user-active.png",
+        "iconPath": "/images/user.png",
+        "pagePath": "pages/mine/mine-mine/mine-mine",
+        "text": "我的"
+      }
+    ]
+  },
+  
+  "sitemapLocation": "sitemap.json"
+}

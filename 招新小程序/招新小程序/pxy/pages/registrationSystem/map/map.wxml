@@ -1,0 +1,2 @@
+<!--miniprogram/pages/map/map.wxml-->
+<view bindtap='intoMap'>地址导航</view>

@@ -1,0 +1,20 @@
+<!--miniprogram/pages/picture/picture.wxml-->
+<view class='div_f'>
+  <view class='div_1'>
+     <view class='div_2'></view>
+     <text class='text_1'>振翅云顶之上，极目星辰大海</text>
+     <view class='div_3'></view>
+     <text class='text_2'>申请书照片提交截止日期为2019.09.30</text>
+  </view>
+  <view class='div_4'>
+        <text class='point_out'>报名信息提交成功</text>
+        <image class='success' src='/images/success.png'></image>
+        <text class='lastWord'>请填写纸质报名表交于学长学姐后，提交后点击下方确认按钮</text>
+  </view>
+</view>
+
+<view class='div_s'>
+  <button class='button_1' bindtap='goToPicture'>提交申请书照片</button>
+  <view class='div_5'></view>
+  <button class='button_2' bindtap='goToSignUp'>修改报名信息</button>
+</view>

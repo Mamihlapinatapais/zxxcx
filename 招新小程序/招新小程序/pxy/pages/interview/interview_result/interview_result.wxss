@@ -1,0 +1,55 @@
+.superbox{
+    margin: 20rpx 20rpx 30rpx 20rpx;
+    height: 522rpx;
+    border-radius: 10rpx;
+    background-color: #fff;
+}
+.superbox .box1{
+    height: 36rpx;
+    border-radius: 10rpx;
+}
+.superbox .test{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 24rpx;    
+}
+.section_section_gap{
+    margin: 30rpx 50rpx; 
+    font-size: 30rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 查询 */
+.button{
+    line-height: 84rpx;
+    height: 84rpx;
+    width: 710rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    border-radius: 42rpx;
+    /* background-color:#52A9DA; */
+    background: linear-gradient(to right, #49ADD6, #7A94ED);
+    font-size: 30rpx;
+    color: #fff;
+}
+.button-hover{
+    opacity: 0.9;
+}

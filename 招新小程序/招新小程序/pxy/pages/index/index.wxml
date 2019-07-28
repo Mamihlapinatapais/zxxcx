@@ -1,0 +1,109 @@
+<!--index.wxml-->
+
+<!-- 第一部分  轮播图 -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+  circular="{{circular}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 第二部分  功能部分 -->
+<view class="bigpart">
+  <!-- <view class="bigpart1"> -->
+
+  <view class="ticket" bindtap="btnclick1">
+    <image src="{{rush}}" class="ticket1"></image><text class="ticket2">抢票系统</text>
+  </view>
+
+  <view class="apply" bindtap="btnclick2">
+    <image src="{{signUp}}" class="apply1"></image><text class="apply2">报名系统</text>
+  </view>
+
+  <view class="seeface" bindtap="btnclick3">
+    <image src="{{interview}}" class="seeface1"></image><text class="seeface2">面试系统 </text>
+  </view>
+
+  <view class="map">
+    <image src="{{navigation}}" class="map1"></image><text class="map2">太理导航</text>
+  </view>
+
+  <!-- </view> -->
+</view>
+
+<!-- 第三部分 书院简介 -->
+
+<view class="introduction">
+
+  <view class="SMALLS">
+
+    <view class="smallbox"><text class="smallbox1">书院简介</text></view>
+
+    <navigator hover-class="none" class="jumpto" url="/pages/mine/mine-intro/mine-intro">
+      <text class="jumpto1">更多</text>
+      <image class="jumpto2" src="/images/more.png"></image>
+    </navigator>
+
+  </view>
+
+  <view class="bigbox">{{introductionpart}}</view>
+
+</view>
+
+<!-- 第四部分 书院新闻 -->
+
+<view class="yunnews">
+
+  <view class="SMALLS2">
+
+    <view class="smallbox2"><text class="smallbox21">书院新闻</text></view>
+
+    <navigator hover-class="none" class="jump" url="/pages/index/index-newscenter/index-newscenter">
+      <text class="jump1">新闻中心</text>
+      <image class="jump2" src="/images/more.png"></image>
+    </navigator>
+
+  </view>
+
+  <scroll-view class="bigbox" scroll-y="true" lower-threshold='100' style="height: {{windowHeight}}px;"
+    bindscrolltolower="loadMore">
+    <view class='list'>
+      <navigator class='item' url="/pages/index/index-newsdetails/index-newsdetails" wx:for="{{list}}">
+
+        <view class="wordsss">
+
+          <view class="wordss">
+
+            <text class="newstitle1"> {{item.title}}</text>
+
+            <view class="words">
+              <text class="newstime"> {{item.time}}</text>
+              <text class="newsauthor"> by{{item.author}}</text>
+            </view>
+
+          </view>
+
+          <image class="newsimages" src="  {{item.images}}"></image>
+        </view>
+
+      </navigator>
+    </view>
+
+    <view class="weui-loadmore" hidden="{{isHideLoadMore}}">
+      <view class="weui-loading"></view>
+      <view class="weui-loadmore__tips">正在加载</view>
+    </view>
+
+  </scroll-view>
+
+
+
+
+
+
+
+
+
+</view>

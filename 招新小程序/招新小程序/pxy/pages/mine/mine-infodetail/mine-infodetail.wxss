@@ -1,0 +1,48 @@
+/* pages/infodetail/infodetail.wxss */
+
+page{
+  background-color: #F6F6F6;
+}
+
+.infodetails{
+  width:750rpx;
+  height:1186rpx;
+  background-color:white;
+  margin-top:20rpx;
+  display:flex;
+  flex-direction: column ;
+}
+
+.infotail1{
+  font-family:PingFang SC;
+  font-size:40rpx;
+  margin-top:30rpx;
+  margin-bottom:80rpx;
+  margin-left:30rpx;
+}
+
+.infotail2{
+  font-family:PingFang SC;
+  font-size:24rpx;
+  margin-bottom:13rpx;
+  margin-left:30rpx;
+}
+
+.infotail3{
+  width:690rpx;
+  height:390rpx;
+  border-radius:10rpx;
+  margin-left:30rpx;
+}
+
+.infotail4{
+  font-family:PingFang SC;
+  font-size:24rpx;
+  line-height:40rpx;
+  margin:30rpx;
+}
+
+
+
+
+

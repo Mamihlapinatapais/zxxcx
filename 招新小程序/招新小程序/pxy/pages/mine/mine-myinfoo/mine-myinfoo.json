@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "个人信息",
+  "usingComponents": {
+    "infoNature": "/components/row-nature/row-nature",
+    "infoNatureInput": "/components/row-nature/row-nature",
+    "inputModal": "/components/input/input"
+  }
+}
